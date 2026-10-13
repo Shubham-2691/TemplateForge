@@ -877,7 +877,7 @@ async function generateFinalPrompt() {
   - Description: ${promptData.desc || 'A beautifully designed webpage'}`;
 
   // Add your API Key here safely!
-  const apiKey = "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";
+  const apiKey = "ADD your api key here";
 
   if (!apiKey.startsWith("sk-or-v1-") || apiKey.includes("YOUR_ACTUAL_SECRET_KEY_HERE")) {
     console.warn("Invalid or placeholder API key detected. Using local generator.");
