@@ -1,0 +1,4 @@
+/* UTILITIES */
+.toast { position:fixed; bottom:25px; right:25px; z-index:1000; background:#fff; color:#000; padding:14px 18px; border-radius:12px; font-weight:600; opacity:0; transform:translateY(20px); transition:.3s; }
+.toast.show { opacity:1; transform:none; }
+@media(max-width:700px) { .topbar-inner{flex-wrap:wrap;} .search{order:3;flex-basis:100%; max-width:none;} .header-actions{margin-left:auto;} .github-grid{grid-template-columns:1fr;} }

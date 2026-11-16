@@ -1,0 +1,26 @@
+/* AI PROMPT GENERATOR */
+.tm-gen-container { max-width:900px; margin:0 auto; padding:40px 20px 100px; animation:fadeIn .4s ease; }
+.tm-progress-bar { width:100%; height:6px; background:var(--border); border-radius:10px; margin-bottom:40px; overflow:hidden; }
+.tm-progress { height:100%; background:var(--accent); width:0%; transition:width .4s ease; }
+.tm-step { display:none; animation:fadeIn .4s ease; }
+.tm-step.active { display:block; }
+@keyframes fadeIn { from { opacity:0; transform:translateY(15px); } to { opacity:1; transform:none; } }
+.tm-eyebrow { color:var(--accent); font-weight:700; font-size:13px; letter-spacing:1px; text-transform:uppercase; margin-bottom:12px; }
+.tm-title { font-size:clamp(28px, 5vw, 42px); margin:0 0 10px; color:var(--text); }
+.tm-sub { color:var(--muted); font-size:18px; margin-bottom:35px; }
+.tm-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:16px; margin-bottom:30px; }
+.tm-grid.small { grid-template-columns:repeat(auto-fill, minmax(180px, 1fr)); }
+.tm-card { background:var(--surface); border:2px solid var(--border); border-radius:16px; padding:20px; cursor:pointer; transition:.2s ease; position:relative; }
+.tm-card:hover { border-color:var(--muted); transform:translateY(-2px); }
+.tm-card.selected { border-color:var(--accent); background:rgba(99,102,241,.08); }
+.tm-card.selected::before { content:'✓'; position:absolute; top:15px; right:15px; color:var(--accent); font-weight:800; font-size:18px; }
+.tm-card-icon { font-size:28px; margin-bottom:12px; }
+.tm-card-title { font-weight:700; font-size:16px; margin-bottom:6px; }
+.tm-card-desc { font-size:13px; color:var(--muted); line-height:1.5; }
+.tm-form { display:flex; flex-direction:column; gap:20px; max-width:600px; }
+.tm-form label { display:block; font-weight:600; margin-bottom:8px; }
+.tm-form input, .tm-form textarea, .tm-form select { width:100%; background:var(--bg); border:1px solid var(--border); color:var(--text); padding:14px 16px; border-radius:12px; outline:none; transition:.2s; }
+.tm-form textarea { min-height:120px; resize:vertical; }
+.tm-prompt-box { background:#000; border:1px solid var(--border); padding:24px; border-radius:16px; font-family:monospace; color:#a1a1aa; font-size:14px; white-space:pre-wrap; max-height:400px; overflow-y:auto; }
+.tm-nav-actions { display:flex; justify-content:space-between; margin-top:50px; padding-top:30px; border-top:1px solid var(--border); }
+
